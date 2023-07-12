@@ -296,6 +296,16 @@ p + p {
   width: fit-content;
 }
 
+.m-scroll-fast {
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollText-left 10s infinite linear;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
 @keyframes scrollText-left {
   from {
     transform: translateX(0%);
@@ -360,6 +370,11 @@ section + section {
   align-self: flex-end;
 }
 #clouds {
+  color: #5555FF;
+  margin: 3rem 0 4rem 0;
+  overflow: hidden;
+}
+#error-container {
   color: #5555FF;
   margin: 3rem 0 4rem 0;
   overflow: hidden;
