@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">norskegab: Gabriel Mougard personal blog</title>
+  <link rel="shortcut icon" href="/assets/svg/home.svg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="norskegab"/>
+  <meta property="og:description" content="Gabriel Mougard personal blog"/>
+</head>
+<body>
+  <script>
+    const mode = window.localStorage.getItem("ui.theme");
+    if (mode === "light") {
+      document.body.classList.add("light-mode");
+    } else if (mode === "dark") {
+      document.body.classList.add("dark-mode");
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+  <header class="container">
+    <div class="left">
+      <a href="/" id="logo"><img src="/assets/svg/home.svg" width="33" height="33"/>
+        <div class="wordmark">
+          <h1>norskegab</h1>
+        </div>
+      </a>
+      <p id="headline">
+        Bonjour, wanderers of the digital realm, to my corner of cyberspace! This is where the magic of CS, Software Engineering and open-source blend in a symphony of ones and zeros.
+      </p>
+      <p class="desktop">
+        <a href="#resume">my resume &darr;</a>
+      </p>
+    </div>
+    <div class="right">
+      <nav>
+        <a href="post-urls">posts</a> <!-- TODO -->
+        <a href="paper-urls">papers</a> <!-- TODO -->
+        <a href="#resume">resume</a>
+        <button class="mode-toggle" id="toggle-mode-button">
+          <img class="light-mode" src="/assets/svg/sun.svg" width="24" height="24"/>
+          <img class="dark-mode" src="/assets/svg/moon.svg" width="24" height="24"/>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="clouds" class="ascii scroll">
+    <div class="m-scroll">
+        <span>
+            <pre><code>            _                                                _                                                     _                                                _                                                    _                                                _                                     </code></pre>
+            <pre><code>          (`  ).                   _                       (`  ).                   _                            (`  ).                   _                       (`  ).                   _                           (`  ).                   _                       (`  ).                   _              </code></pre>
+            <pre><code>         (     ).              .:(`  )`.                  (     ).              .:(`  )`.                       (     ).              .:(`  )`.                  (     ).              .:(`  )`.                      (     ).              .:(`  )`.                  (     ).              .:(`  )`.          </code></pre>
+            <pre><code>        _(       '`.          :(   .    )                _(       '`.          :(   .    )                     _(       '`.          :(   .    )                _(       '`.          :(   .    )                    _(       '`.          :(   .    )                _(       '`.          :(   .    )         </code></pre>
+            <pre><code>    .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )                .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )               .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )        </code></pre>
+            <pre><code>   ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )                ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )               ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )         </code></pre>
+            <pre><code>   `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._             `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._            `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._      </code></pre>
+            <pre><code>     ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )             ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )            ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )    </code></pre>
+            <pre><code>  ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))        ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))       ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))  </code></pre>
+            <pre><code> (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))      (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))     (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  )) </code></pre>
+            <pre><code>              (_  )                     ` __.:'                (_  )                     ` __.:'                     (_  )                     ` __.:'                (_  )                     ` __.:'                    (_  )                     ` __.:'                (_  )                     ` __.:'   </code></pre>
+            <pre><code>                                                                                                                                                                                                                                                                                                                </code></pre>
+        </span>
+        <span>
+            <pre><code>            _                                                _                                                     _                                                _                                                    _                                                _                                     </code></pre>
+            <pre><code>          (`  ).                   _                       (`  ).                   _                            (`  ).                   _                       (`  ).                   _                           (`  ).                   _                       (`  ).                   _              </code></pre>
+            <pre><code>         (     ).              .:(`  )`.                  (     ).              .:(`  )`.                       (     ).              .:(`  )`.                  (     ).              .:(`  )`.                      (     ).              .:(`  )`.                  (     ).              .:(`  )`.          </code></pre>
+            <pre><code>        _(       '`.          :(   .    )                _(       '`.          :(   .    )                     _(       '`.          :(   .    )                _(       '`.          :(   .    )                    _(       '`.          :(   .    )                _(       '`.          :(   .    )         </code></pre>
+            <pre><code>    .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )                .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )               .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )        </code></pre>
+            <pre><code>   ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )                ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )               ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )         </code></pre>
+            <pre><code>   `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._             `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._            `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._      </code></pre>
+            <pre><code>     ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )             ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )            ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )    </code></pre>
+            <pre><code>  ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))        ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))       ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))  </code></pre>
+            <pre><code> (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))      (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))     (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  )) </code></pre>
+            <pre><code>              (_  )                     ` __.:'                (_  )                     ` __.:'                     (_  )                     ` __.:'                (_  )                     ` __.:'                    (_  )                     ` __.:'                (_  )                     ` __.:'   </code></pre>
+            <pre><code>                                                                                                                                                                                                                                                                                                                </code></pre>
+        </span>
+    </div>
+  </div>
+  <section id="features" class="container">
+    <div class="feature">
+      <h2>Blogging <img class="icon" src="/assets/svg/blogging.svg" width="24" height="24"/></h2>
+      <p>
+        Fasten your seat belts and hold on tight as we embark on a journey
+        through loops and conditionals, diving deep into the intricate maze
+        of data structures, and ascending the abstract peaks of algorithms!
+        Oh, and there might be the occasional null pointer exception, but hey, nobody's perfect, right?
+      </br>
+      </br>
+        Ever dreamed of traversing through a binary tree? Do you find solace in the predictable loops of a while statement?
+        Or perhaps you've yearned for the thrill of a successful <code>git merge</code> without any conflicts?
+        Well, you've come to the right place!
+      </br>
+      </br>
+        As a caffeine-addict and semicolon misplacer (AKA software engineer), I won't be that kind of code-junky but
+        a story-teller instead who'll try to express riveting tales through Pythonic prose and Golang-ish jargon and other row of bytes...
+      </p>
+    </div>
+    <div class="feature">
+      <h2>Scientific papers <img class="icon" src="/assets/svg/key.svg" width="24" height="24"/></h2>
+      <p>
+        Prepare to compile, debug, and deploy your brain cells, because this isn't your average 'Hello World' web site.
+      </br>
+      </br>
+        No, my friends, this is the real deal -
+        Welcome to our delightful kaleidoscope of scientific intrigue and whimsical wonderment;
+        a place where hard facts and light-hearted folly rendezvous in the name of enlightenment and entertainment. !
+      </br>
+      </br>
+        Get ready to put on your thinking caps and laughing hats simultaneously as we oscillate between
+        the serious and the silly, the factual and the fanciful, the rational and the ridiculous.
+        This isn't your average science digest, but a quirky almanac where the quirky side of science takes the center stage.
+      </p>
+    </div>
+    <div class="feature">
+      <h2>Junk <img class="icon" src="/assets/svg/junk.svg" width="24" height="24"/></h2>
+      <p>
+        Salutations, dear devourers of the daily! Welcome to my grand emporium of information,
+        my Internet's very own melting pot of news, views, and the occasional ridiculous ruse.
+        Here, no news is too big, no story too small, and no gossip too trivial to escape my gaze.
+      </br>
+      </br>
+        Picture this: an eclectic arena where the gravitas of global politics, the whimsicality of celebrity gaffes,
+        and the simplicity of everyday life merge into a fascinating symphony of stories.
+        From the head-scratching decisions of political heavyweights to the head-turning Parisian
+        fashion faux pas (I wouldn't be french without criticizing my own folk right ?), from the world-changing discoveries
+        of science to world-weirding discoveries of the utterly bizarre – we have it all!
+      </p>
+    </div>
+  </section>
+  <div class="divider grey ascii scroll">
+    <div class="m-scroll-right">
+      <span>
+        <pre><code>--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---..,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.</code></pre>
+      </span>
+      <span>
+        <pre><code>--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---..,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.</code></pre>
+      </span>
+    </div>
+  </div>
+  <section class="container">
+    <h1>Latest content (WIP)</h1>
+  </section>
+  <div id="resume" class="divider grey ascii scroll">
+    <div class="m-scroll-right">
+      <span>
+        <pre><code>--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---..,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.</code></pre>
+      </span>
+      <span>
+        <pre><code>--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---..,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.--..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.---.</code></pre>
+      </span>
+    </div>
+  </div>
+  <section id="resume-it-out" class="one-column container">
+    <div>
+      <h2>My resume</h2>
+      <p>
+        Download my resume by running the following command in your
+        terminal: <br/>
+      </p>
+      <p></p>
+      <div class="ascii grey">
+        <pre><code>(&lt;joke&gt;This resume is currently supported on all platforms.&lt;/joke&gt;)</code></pre>
+      </div>
+    </div>
+    <div>
+      <div class="copy-box">
+        <code id="install-command">curl -LJO https://github.com/gabrielmougard/gabrielmougard.github.io/raw/main/resume.pdf
+        </code><button class="copy-button" id="install-copy-button">Copy</button>
+      </div>
+    </div>
+  </section>
+    <div class="divider blue ascii">
+      ( ) ( ) ( ) ( ) ( ) ( )
+    </div>
+  <section id="get-involved" class="container two-column">
+    <div class="flowers">
+      <pre class="pink"><code>                                  \|/        </code></pre>
+      <pre class="pink"><code>                                 --o--       </code></pre>
+      <pre class="pink"><code>                                  /|\        </code></pre>
+      <pre class="pink"><code>                                             </code></pre>
+      <pre class="pink"><code>     *                     _                 </code></pre>
+      <pre class="pink"><code>              _         =(_.                 </code></pre>
+      <pre class="pink"><code>            -(__ .)    _(_ __)               </code></pre>
+      <pre class="pink"><code>         . (_`     _)`-.                 .   </code></pre>
+      <pre class="pink"><code>       =(         `  _) )                  * </code></pre>
+      <pre class="pink"><code>     (_( `             ' )                   </code></pre>
+      <pre class="pink"><code>    ~.`._ ~__ _   .__ __'_-                  </code></pre>
+    </div>
+    <div>
+      <h2>Get in touch</h2>
+      <p>
+        Send me a mail <a href="mailto: gabriel.mougard@canonical.com">here</a> (professional address) or <a href="mailto: gabriel.mougard@gmail.com">there</a> (personal address) to contact me. Yes, I'm a mail type of guy.
+      </p>
+      <p>
+        Check out my github page at <a href="https://github.com/gabrielmougard">github.com/gabrielmougard</a> to see what I'm working on.
+      </p>
+    </div>
+  </section>
+  <div class="ocean grey ascii">
+    <pre>..-.--*--.__-__..._.--..-._.---....~__..._.--..~._.---.--..____.--_--'`_---..</pre>
+    <pre>-.--~--._  __..._.--..~._.--- - -.____.--_--'`_---..~.----_~</pre>
+  </div>
+  <footer class="container">
+    &copy; Gabriel Mougard
+  </footer>
+  <script>
+    const toggleModeButton = document.getElementById("toggle-mode-button");
+    const copyButton = document.getElementById("install-copy-button");
+    const textToCopy = document.getElementById("install-command").innerText;
+    copyButton.addEventListener("click", async function () {
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        copyButton.innerText = "Copied";
+      } catch (err) {
+        console.error("Failed to copy text: ", err);
+      }
+    });
+    toggleModeButton.addEventListener("click", async function () {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        window.localStorage.setItem("ui.theme", "dark");
+      } else {
+        window.localStorage.setItem("ui.theme", "light");
+      }
+    });
+  </script>
+</body>
+</html>
