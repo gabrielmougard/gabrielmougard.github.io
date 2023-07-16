@@ -1,0 +1,42 @@
+{% for post in site.posts limit:4 %}
+    {% assign post_id = post.url | split: "/" | last %}
+    {% assign remainder = forloop.index | modulo: 2 %}
+    <section id="{{ post_id }}" class="container two-column mobile-reverse">
+        {% if forloop.first == true %}
+            <div class="stack">
+                <div>
+                    <h2>{{ post.title }} - index: {{ forloop.index }}</h2>
+                    {{ post.custom_html_excerpt | markdownify }}
+                </div>
+                <a href="{{ post.url | relative_url }}" class="button">Read it &darr;</a>
+            </div>
+            {{ post.ascii_illustration | markdownify }}
+        {% elsif remainder == 0 %}
+            {{ post.ascii_illustration | markdownify }}
+            <div class="stack">
+                <div>
+                    <h2>{{ post.title }}</h2>
+                    {{ post.custom_html_excerpt | markdownify }}
+                </div>
+                <a href="{{ post.url | relative_url }}" class="button">Read it &darr;</a>
+            </div>
+        {% else %}
+            <div class="stack">
+                <div>
+                    <h2>{{ post.title }} - index: {{ forloop.index }}</h2>
+                    {{ post.custom_html_excerpt | markdownify }}
+                </div>
+                <a href="{{ post.url | relative_url }}" class="button">Read it &darr;</a>
+            </div>
+            {{ post.ascii_illustration | markdownify }}
+        {% endif %}
+    </section>
+{% endfor %}
+
+<section id="read-all-content" class="one-column container">
+    <div>
+        <a href="{{ site.blog_posts_url | relative_url }}" class="button">
+            Read all posts &darr;
+        </a>
+    </div>
+</section>
