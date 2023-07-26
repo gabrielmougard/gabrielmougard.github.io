@@ -10,8 +10,11 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.9"
 gem "jekyll-paginate", "~> 1.1"
+gem "jekyll-redirect-from", "~> 0.16"
+gem "jekyll-seo-tag", "~> 2.7"
+gem "jekyll-include-cache"
+gem "jekyll-sitemap", "~> 1.4"
 gem "kramdown-parser-gfm", "~> 1.1"
-gem 'jekyll-include-cache'
 gem "github-pages", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
