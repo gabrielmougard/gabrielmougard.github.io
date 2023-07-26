@@ -13,22 +13,81 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: norskegab
+lang: en
+email: gabriel.mougard@canonical.com
+description: Gabriel Mougard personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  gabrielmougard
+
+social:
+  name: Gabriel Mougard
+  email: gabriel.mougard@canonical.com
+  links:
+    # The first element serves as the copyright owner's link
+    - https://github.com/gabrielmougard
+    - https://www.linkedin.com/in/gabriel-mougard/
+
+github:
+  username: gabrielmougard
+
+google_site_verification: # fill in the verification string
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+google_analytics:
+  id: # fill in the Google Analytics ID
+
+
 
 # Build settings
-markdown: kramdown
-theme: minima
+# theme: gab-theme
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode: # [light|dark]
+
+# boolean type, the global switch for TOC in posts.
+toc: true
+
+comments:
+  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # optional, default to 'pathname'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+pwa:
+  enabled: true # the option for PWA feature
+
+paginate: 10
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,6 +103,17 @@ plugins:
 
 blog_posts_url: /posts.html
 papers_url: /papers.html
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 defaults:
   - scope:
@@ -66,4 +136,14 @@ defaults:
       permalink: /:title/
 
 sass:
+  sass_dir: _sass
   style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
