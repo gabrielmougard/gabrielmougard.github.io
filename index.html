@@ -1,12 +1,15 @@
 ---
 ---
-
+<!--
+  This is a simple landing page acting as a tiny beautiful digest of everything  I do.
+  It includes a welcome section, latest projects section, about me section and contact form section.
+-->
 <!doctype html>
 <html>
 <head>
   <title key="title">norskegab: Gabriel Mougard personal blog</title>
   <link rel="shortcut icon" href="/assets/svg/home.svg"/>
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/lp.css"/>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="norskegab"/>
@@ -39,7 +42,7 @@
     </div>
     <div class="right">
       <nav>
-        <a href="post-urls">posts</a> <!-- TODO -->
+        <a href="{{ site.baseurl }}/posts.html">posts</a> <!-- TODO -->
         <a href="paper-urls">papers</a> <!-- TODO -->
         <a href="#resume">resume</a>
         <button class="mode-toggle" id="toggle-mode-button">
