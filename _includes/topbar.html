@@ -16,7 +16,7 @@
                 {% for item in paths %}
                     {% if forloop.first %}
                         <span>
-                            <a href="{{ '/' | relative_url }}">
+                            <a href="{{ '/posts.html' | relative_url }}">
                                 {{ site.data.locales[include.lang].tabs.home | capitalize }}
                             </a>
                         </span>
@@ -44,12 +44,12 @@
 
         <div id="topbar-title">
             {% if page.layout == 'posts' %}
-                {{- site.data.locales[include.lang].title | default: site.title -}}
+                <h1>{{- site.data.locales[include.lang].title | default: site.title -}}</h1>
             {% elsif page.collection == 'tabs' or page.layout == 'page' %}
                 {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
-                {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
+                <h1>{{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}</h1>
             {% else %}
-                {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
+                <h1>{{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}</h1>
             {% endif %}
         </div>
 
