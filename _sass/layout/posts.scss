@@ -18,6 +18,12 @@
     }
 
     .card {
+        border: 1px solid var(--card-border-color);
+
+        &:hover {
+            border: 1px solid var(--card-hover-border-color);
+        }
+
         %img-radius {
             border-radius: $base-radius $base-radius 0 0;
         }

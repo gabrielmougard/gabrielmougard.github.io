@@ -10,11 +10,11 @@
   --color-light-grey: #BBBBBB;
   --color-dark-grey: #111111;
   --color-grey: #777777;
-  --color-blue: #5555FF;
+  --color-blue: rgb(85, 85, 255);
   --color-green: #00C259;
   --color-yellow: #FFFF55;
-  --color-pink: #FF55FF;
-  --color-cyan: #7799CC;
+  --color-pink: rgb(255, 85, 255);
+  --color-cyan: rgb(119, 153, 204);
   --color-red: #FF5555;
   --font-monospace: "FoundersGroteskMono", monospace;
   --font-default: "FoundersGrotesk", sans-serif;
