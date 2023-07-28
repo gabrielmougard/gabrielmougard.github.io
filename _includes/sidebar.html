@@ -48,9 +48,9 @@
 
       {% for entry in site.data.contact %}
         {% case entry.type %}
-          {% when 'github', 'twitter' %}
+          {% when 'github' %}
             {%- capture url -%}
-              https://{{ entry.type }}.com/{{ site[entry.type].username }}
+              https://{{ entry.type }}.com/{{ site.github_username }}
             {%- endcapture -%}
           {% when 'email' %}
             {% assign email = site.social.email | split: '@' %}
@@ -76,7 +76,16 @@
               rel="{{ link_types }}"
             {% endunless %}
           >
-            <i class="{{ entry.icon }}"></i>
+            {% case entry.type %}
+              {% when 'github' %}
+                <img class="light" src="/assets/svg/light-octicon.svg" width="24" height="24"/>
+                <img class="dark" src="/assets/svg/dark-octicon.svg" width="24" height="24"/>
+              {% when 'email' %}
+                <img class="light" src="/assets/svg/light-mail.svg" width="24" height="24"/>
+                <img class="dark" src="/assets/svg/dark-mail.svg" width="24" height="24"/>
+              {% else %}
+                <i class="{{ entry.icon }}"></i>
+            {% endcase %}
           </a>
         {% endif %}
       {% endfor %}
