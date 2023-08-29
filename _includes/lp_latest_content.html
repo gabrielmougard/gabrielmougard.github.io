@@ -5,7 +5,7 @@
         {% if forloop.first == true %}
             <div class="stack">
                 <div>
-                    <h2>{{ post.title }} - index: {{ forloop.index }}</h2>
+                    <h2>{{ post.title }}</h2>
                     {{ post.custom_html_excerpt | markdownify }}
                 </div>
                 <a href="{{ post.url | relative_url }}" class="button">Read it &darr;</a>
@@ -23,7 +23,7 @@
         {% else %}
             <div class="stack">
                 <div>
-                    <h2>{{ post.title }} - index: {{ forloop.index }}</h2>
+                    <h2>{{ post.title }}</h2>
                     {{ post.custom_html_excerpt | markdownify }}
                 </div>
                 <a href="{{ post.url | relative_url }}" class="button">Read it &darr;</a>
