@@ -7,40 +7,26 @@ tags: [hardware]
 pin: true
 hidden: false
 ascii_illustration: "
-<div class=\"diagram\">                                                                                         
-    <pre  class=\"blue\">                             ####                                             </pre>                  
-    <pre  class=\"blue\">                            ##  ##                                            </pre>                  
-    <pre  class=\"blue\">                             ###/          #                                  </pre>                  
-    <pre  class=\"blue\">                              #(    (#     #                                  </pre>                  
-    <pre  class=\"blue\">                              #(    (#     #   #####                          </pre>                  
-    <pre  class=\"blue\">                        #.    #(    (#     #  ##  ##                          </pre>                  
-    <pre  class=\"blue\">                        #.    #(    ,#     #    *#                            </pre>                  
-    <pre  class=\"blue\">                        #.    #(    (#     #     #                            </pre>                  
-    <pre  class=\"blue\">                                                                              </pre>                  
-    <pre  class=\"blue\">                    ##################################                        </pre>                  
-    <pre  class=\"blue\">   ##              ##                                ##                ##     </pre>                  
-    <pre  class=\"blue\"> ##  ###########   ##                           #.*  ##   #############  (*   </pre>                  
-    <pre  class=\"blue\">  ####             ##       ............ .....       ##               ####    </pre>                  
-    <pre  class=\"blue\">                   ##      #                  #      ##                       </pre>                  
-    <pre  class=\"blue\">                   ##      #                  #      ##                       </pre>                  
-    <pre  class=\"blue\">      ###          ##      #                  #      ##                       </pre>                  
-    <pre  class=\"blue\">     ##  #######   ##      #                  #      ##   #####(*############ </pre>                  
-    <pre  class=\"blue\">      ####         ##      #                  #      ##                       </pre>                  
-    <pre  class=\"blue\">                   ##      #                  #      ##        ######         </pre>                  
-    <pre  class=\"blue\">                   ##      #                  #      ##        ##%###         </pre>                  
-    <pre  class=\"blue\">                   ##      .##################/      ##                       </pre>                  
-    <pre  class=\"blue\">      ##########   ##                                ##   #############.      </pre>                  
-    <pre  class=\"blue\">                   ##                                ##                       </pre>                  
-    <pre  class=\"blue\">                    ##################################,                       </pre>                  
-    <pre  class=\"blue\">                                                                              </pre>                  
-    <pre  class=\"blue\">                        #.    #(    (#     #     #                            </pre>                  
-    <pre  class=\"blue\">                        #.    #(    /#     #     #                            </pre>                  
-    <pre  class=\"blue\">                        #.   ###(   (#     #     #                            </pre>                  
-    <pre  class=\"blue\">                        #.  ##  ##  (#     #     #                            </pre>                  
-    <pre  class=\"blue\">                        #.   ####   (#  ###(##                                </pre>                  
-    <pre  class=\"blue\">                        #.          (#  ######                                </pre>                  
-    <pre  class=\"blue\">                                    (#                                        </pre>                  
-    <pre  class=\"blue\">                                    ##                                        </pre>
+<div class=\"diagram\">
+    <pre class=\"blue\">                                      </pre>
+    <pre class=\"blue\">        !7777!7777777777777.          </pre>
+    <pre class=\"blue\">   ~777?55555555PPP555PPPPPJ???7^     </pre>
+    <pre class=\"blue\">  .PBBBBGBBBBBBBBBBBBBBBBBBBBBB#P:    </pre>
+    <pre class=\"blue\"> .:PGGGGG5JJJJJJJJJJJJJJJYPBBBBBG^:.. </pre>
+    <pre class=\"blue\">^?JGGGGP!                  JBBBB5JJ!..</pre>
+    <pre class=\"blue\">~YYGGGB5~                  !GBBBPYY!..</pre>
+    <pre class=\"blue\">~JYGGGB5~   __   __        !BBBBPYY!..</pre>
+    <pre class=\"blue\">~JYGBBB5~  /  ` |__) |  |  !BBBBPYY!..</pre>
+    <pre class=\"blue\">~JYGBBB5~  \\__, |    \\__/  !BBBBPYY!..</pre>
+    <pre class=\"blue\">~JYGBBB5~                  !BBBBPYY!..</pre>
+    <pre class=\"blue\">~JYGBBB5~                  !BBBB5JY!..</pre>
+    <pre class=\"blue\">~YYGBBBGJ~               ~!5BBBB5YY!..</pre>
+    <pre class=\"blue\">^JYBBBBBBGPPPPPPPPPPPPPPPGBBBBBBPJY!  </pre>
+    <pre class=\"blue\"> .^G#BBBBBBBBBBBBB########BBBBB#B^..  </pre>
+    <pre class=\"blue\">   !5PPPPPPPP55PPPPP55PPPPGPPPP5?.    </pre>
+    <pre class=\"blue\">     .:^JYYYYJJYYYYJJJYYYYY^....      </pre>
+    <pre class=\"blue\">       .^^^^^^^^^^^^^^^^^^:.          </pre>
+
 </div>
 "
 custom_html_excerpt: "
