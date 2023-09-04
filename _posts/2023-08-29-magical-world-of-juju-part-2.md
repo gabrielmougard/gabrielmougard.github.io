@@ -8,34 +8,35 @@ pin: true
 hidden: false
 ascii_illustration: "
 <div class=\"diagram\">
-    <pre class=\"pink\">                 Web interface & REST API                    </pre>
-    <pre>                             *                               </pre>
-    <pre>                             ┆                               </pre>
-    <pre>                             .                               </pre>
-    <pre>                             +                               </pre>
-    <pre>                             .                               </pre>
-    <pre>                             *                               </pre>
-    <pre class=\"blue\">            ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐             </pre>
-    <pre class=\"blue\">            ┆ (regiond)           ┆ pgsql,maas ┆             </pre>
-    <pre class=\"blue\">            └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘             </pre>
-    <pre class=\"pink\">               DNS, NTP, Syslog, Squid Proxy                 </pre>
-    <pre>                 .                        .                  </pre>
-    <pre>                /                          \\                 </pre>
-    <pre>               /                            \\                </pre>
-    <pre>              *                              *               </pre>
-    <pre class=\"blue\">    ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐            ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐     </pre>
-    <pre class=\"blue\">    ┆ (rackd)  ┆ maas  ┆            ┆ (rackd)  ┆ maas  ┆     </pre>
-    <pre class=\"blue\">    └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘            └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘     </pre>
-    <pre class=\"pink\"> PXE,IPMI,DCHP,TFTP,ISCI,NTP     PXE,IPMI,DCHP,TFTP,ISCI,NTP </pre>
-    <pre>             |                               |               </pre>
-    <pre>     ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐              ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐      </pre>
-    <pre>     ┆       ┆        ┆              ┆       ┆        ┆      </pre>
-    <pre class=\"blue\">   ┌╴╴╴╴┐  ┌╴╴╴╴┐   ┌╴╴╴╴┐         ┌╴╴╴╴┐  ┌╴╴╴╴┐   ┌╴╴╴╴┐   </pre>
-    <pre class=\"blue\">   ┆ __ ┆  ┆ __ ┆   ┆ __ ┆         ┆ __ ┆  ┆ __ ┆   ┆ __ ┆   </pre>
-    <pre class=\"blue\">   ┆ __ ┆  ┆ __ ┆   ┆ __ ┆         ┆ __ ┆  ┆ __ ┆   ┆ __ ┆   </pre>
-    <pre class=\"blue\">   ┆    ┆  ┆    ┆   ┆    ┆         ┆    ┆  ┆    ┆   ┆    ┆   </pre>
-    <pre class=\"blue\">   ┆ m0 ┆  ┆ m1 ┆   ┆ m2 ┆   ...   ┆ mi ┆  ┆ .. ┆   ┆ .. ┆   </pre>
-    <pre class=\"blue\">   └╴╴╴╴┘  └╴╴╴╴┘   └╴╴╴╴┘         └╴╴╴╴┘  └╴╴╴╴┘   └╴╴╴╴┘   </pre>
+    <pre class=\"pink\">         Web interface & REST API        </pre>
+    <pre>                     *                   </pre>
+    <pre>                     ┆                   </pre>
+    <pre>                     .                   </pre>
+    <pre>                     +                   </pre>
+    <pre>                     .                   </pre>
+    <pre>                     *                   </pre>
+    <pre class=\"blue\">   ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐  </pre>
+    <pre class=\"blue\">   ┆ (regiond)           ┆ pgsql,maas ┆  </pre>
+    <pre class=\"blue\">   └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘  </pre>
+    <pre class=\"pink\">      DNS, NTP, Syslog, Squid Proxy      </pre>
+    <pre>             .              .            </pre>
+    <pre>            /                \\           </pre>
+    <pre>           /                  \\          </pre>
+    <pre>          *                    *         </pre>
+    <pre class=\"blue\"> ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐  ┌╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┐</pre>
+    <pre class=\"blue\"> ┆ (rackd)  ┆ maas ┆  ┆ (rackd)  ┆ maas ┆</pre>
+    <pre class=\"blue\"> └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘  └╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴┘</pre>
+    <pre class=\"pink\">    PXE,IPMI,DCHP,       PXE,IPMI,DCHP,  </pre>
+	<pre class=\"pink\">    TFTP,ISCI,NTP        TFTP,ISCI,NTP   </pre>
+    <pre>          |                    |         </pre>
+    <pre>  ┌╴╴╴╴╴╴╴╴ ...          ... ╴╴╴╴╴ ...   </pre>
+    <pre>  ┆       ┆                    ┆         </pre>
+    <pre class=\"blue\">┌╴╴╴╴┐  ┌╴╴╴╴┐               ┌╴╴╴╴┐      </pre>
+    <pre class=\"blue\">┆ __ ┆  ┆ __ ┆               ┆ __ ┆      </pre>
+    <pre class=\"blue\">┆ __ ┆  ┆ __ ┆               ┆ __ ┆      </pre>
+    <pre class=\"blue\">┆    ┆  ┆    ┆               ┆    ┆      </pre>
+    <pre class=\"blue\">┆ m0 ┆  ┆ m1 ┆   ...         ┆ mi ┆      </pre>
+    <pre class=\"blue\">└╴╴╴╴┘  └╴╴╴╴┘               └╴╴╴╴┘      </pre>
 </div>
 "
 custom_html_excerpt: "
