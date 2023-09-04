@@ -8,29 +8,29 @@ pin: true
 hidden: false
 ascii_illustration: "
 <div class=\"diagram\">
-    <pre class=\"blue\">                VMs / K8s                                   </pre>
-    <pre class=\"blue\">                    ,                                       </pre>
-    <pre class=\"blue\">                    ,                                       </pre>
-    <pre class=\"blue\">                    ,                                       </pre>
-    <pre class=\"blue\">            ,,.....  ......,.                               </pre>
-    <pre class=\"blue\">        *..         .        ..,.                           </pre>
-    <pre class=\"blue\">     ,..    /(((((((((((((((,    .*                         </pre>
-    <pre class=\"blue\">   ...   /((((((((((, /(, /((((.   .*                       </pre>
-    <pre class=\"blue\">  ,.   /((((((((((((. (((,/((((((.  ..                      </pre>
-    <pre class=\"blue\"> ..   ((((((((((((((. ((/ *((  (((,  ., . .*,. Microservices</pre>
-    <pre class=\"blue\"> ..  *((((((  *, *((,.((/ *(( .((((   .,                    </pre>
-    <pre class=\"blue\"> .   /(((((/ *((  ((, (((/   ,(((((,  .*                    </pre>
-    <pre class=\"blue\"> ..  *(((((/ *((  ((. (((((((((((((.  .*                    </pre>
-    <pre class=\"blue\"> *.   (((((/ *((  ((. ((((((((((((/  ..                     </pre>
-    <pre class=\"blue\">  ,.   ((((/ *(((    /(((((((((((/   ..                     </pre>
-    <pre class=\"blue\">   ,.   .((/ *((((((((((((((((((   ..* .                    </pre>
-    <pre class=\"blue\">     ,.    *(((((((((((((((((.   ...     *.                 </pre>
-    <pre class=\"blue\">       ...      ./(((((*.      .,           Edge            </pre>
-    <pre class=\"blue\">           ,.......   ......,,                              </pre>
-    <pre class=\"blue\">                    ,                                       </pre>
-    <pre class=\"blue\">                    ,                                       </pre>
-    <pre class=\"blue\">                                                            </pre>
-    <pre class=\"blue\">                 Monolith                                   </pre>
+    <pre class=\"blue\">                VMs / K8s                </pre>
+    <pre class=\"blue\">                    ,                    </pre>
+    <pre class=\"blue\">Microservices      ,                     </pre>
+    <pre class=\"blue\">     ,               ,                   </pre>
+    <pre class=\"blue\">      .      ,,.....  ......,.           </pre>
+    <pre class=\"blue\">        *..         .        ..,.        </pre>
+    <pre class=\"blue\">     ,..    /(((((((((((((((,    .*      </pre>
+    <pre class=\"blue\">   ...   /((((((((((, /(, /((((.   .*    </pre>
+    <pre class=\"blue\">  ,.   /((((((((((((. (((,/((((((.  ..   </pre>
+    <pre class=\"blue\"> ..   ((((((((((((((. ((/ *((  (((,  .,  </pre>
+    <pre class=\"blue\"> ..  *((((((  *, *((,.((/ *(( .((((   ., </pre>
+    <pre class=\"blue\"> .   /(((((/ *((  ((, (((/   ,(((((,  .* </pre>
+    <pre class=\"blue\"> ..  *(((((/ *((  ((. (((((((((((((.  .* </pre>
+    <pre class=\"blue\"> *.   (((((/ *((  ((. ((((((((((((/  ..  </pre>
+    <pre class=\"blue\">  ,.   ((((/ *(((    /(((((((((((/   ..  </pre>
+    <pre class=\"blue\">   ,.   .((/ *((((((((((((((((((   ..*   </pre>
+    <pre class=\"blue\">     ,.    *(((((((((((((((((.   ...     </pre>
+    <pre class=\"blue\">       ...      ./(((((*.      .,        </pre>
+    <pre class=\"blue\">           ,.......   ......,,           </pre>
+    <pre class=\"blue\">                    ,        .           </pre>
+    <pre class=\"blue\">                    ,          *         </pre>
+    <pre class=\"blue\">                               Edge      </pre>
+    <pre class=\"blue\">                 Monolith                </pre>
 </div>
 "
 custom_html_excerpt: "
