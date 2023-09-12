@@ -2,7 +2,7 @@
 title: The Magical World of JuJu Charms, part 1
 author: gabrielmougard
 date: 2023-08-29 22:45:00 +0800
-categories: [JuJu, Cloud]
+categories: [MAAS, JuJu, Cloud]
 tags: [development]
 pin: true
 hidden: false
