@@ -44,4 +44,20 @@ The CPU's lineage traces back to a 'less is more' icon, the Intel 4004, birthed 
 
 The 'orders' that CPUs follow aren't complex algorithms or arcane spells. Think of it as a two-step dance: first comes a byte (or maybe two) that declares, 'Hey, we're doing the Macarena!' (that's your opcode), followed by the actual dance moves your CPU needs to shake its silicon groove thing (the essential data). This sequence of 'dance instructions' is what we fondly dub as machine code. And because not all of us are fluent in Binary-ese, there’s assembly language—a user-friendly shorthand that translates our human awkwardness into CPU charisma. Rest assured, it eventually gets turned back into the CPU's native tongue of 1s and 0s.
 
-[work in progress...]
+What consistently amazed me as I penned this article is the inherent simplicity of computers. I often catch myself overthinking, anticipating a level of complexity that simply isn't there! The key takeaway before you read further is this: things that appear straightforward are just that—straightforward. This underlying simplicity can be both wonderfully elegant and, at times, frustratingly limiting.
+
+Now, let's dive into the fundamental workings of your computer at its core.
+
+## Understanding Computer Architecture
+
+```raw
+   ▲  Machine code (Binary)
+   ┆   10000011 11000011  00001010
+   ┆
+   ┆  Machine Code (Hex)
+   ┆   0x83  0xC3  0x0A
+   ┆
+   ┆  Assembly
+   ┆   add   ebx, 10
+   ▼
+```
